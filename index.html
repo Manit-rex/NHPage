@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <img src="nivak_logo.png" alt="logo nivak" class="nhlogo">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+                <a href="#projects">Projects ﹀</a>
+                <ul class="dropdown">
+                    <li><a href="#sowbhagya-b">Sowbhagya B</a></li>
+                    <li><a href="#sowbhagya-a">Sowbhagya A</a></li>
+                    <li><a href="#gomathi-nagar">Gomathi Nagar</a></li>
+                    <li><a href="#sri-nagar">Sri Nagar</a></li>
+                </ul>
+            </li>
+            <li><a href="#completed-projects">Completed Projects</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<hr>
+<!-- Body Section -->
+<section class="body-section">
+    <div class="cards">
+            <div class="card" style="background-image: url('Layout_Sow_B.jpg');">
+                <div class="card-content">
+                    <h2>SOWBHAGYA GARDEN B</h2>
+                    <p>Near GVN College, Illayarasenathal Road, Kovilpatti.</p>
+                    <button>Details ⟶</button>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('Layout_Sow_A.jpg');">
+                <div class="card-content">
+                    <h2>SOWBHAGYA GARDEN A</h2>
+                    <p>Near GVN College, Illayarasenathal Road, Kovilpatti.</p>
+                    <button>Details ⟶</button>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('Gomathi-Amman-2.jpeg');">
+                <div class="card-content">
+                    <h2>GOMATHI AMMAN NAGAR</h2>
+                    <p>Gomathi Amman Nagar, SevalKulam Village, Sankaran Kovil - Kovilpatti Main Road, Thiruvenkadam Taluk, Tenkasi District.</p>
+                    <button>Details ⟶</button>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('sri nadar-2.jpeg');">
+                <div class="card-content">
+                    <h2>SRI NAGAR</h2>
+                    <p>Kodangipalayam, Karanampatti, Coimbatore.</p>
+                    <button>Details ⟶</button>
+                </div>
+            </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="contact-form">
+        <h3>Associate Form for project owners</h3>
+        <form>
+            <input type="text" name="Name of Your Project" placeholder="Name of Your Project*" required>
+            <input type="text" name="Owner Name" placeholder="Owner Name*" required>
+            <input type="number" name="Contact Number" placeholder="Contact Number*" required>
+            <input type="email" name="email" placeholder="Email ID*" required>
+            <input type="text" name="Area of Your Project" placeholder="Area of Your Project*">
+            <textarea name="message" placeholder="Short Description of Your Project" required></textarea>
+            <button type="submit">Submit Project</button>
+        </form>
+    </div>
+</div>
+
+<!-- Image -->
+<div class="image-section">
+    <img src="about_image.jpg" alt="About Image" class="about-img">
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-section">
+        <div class="footer-logo">
+            <img src="nivak_logo.png" alt="nivaklogo">
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">&#9883; About Us</a></li>
+                <li><a href="#">&#9883; Contact Us</a></li>
+                <li><a href="#">&#9883; Terms & Conditions</a></li>
+                <li><a href="#">&#9883; Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="social-media">
+            <h4 style="color: goldenrod;">Find us in social media</h4>
+            <a href="#"><img src="facebook.png" alt="facebook"></a>
+            <a href="#"><img src="instagram.png" alt="insta"></a>
+            <a href="#"><img src="youtube.png" alt="you"></a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <h3>Copyright © 2024 Nivak Housing & Property Developers Private Limited, All rights reserved.</h3>
+    </div>
+    
+</footer>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.nav-menu');
+        menu.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
